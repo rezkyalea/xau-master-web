@@ -1,24 +1,48 @@
-<!DOCTYPE html>
+
+                    <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>XAU Master Web</title>
-                <link rel="stylesheet" href="style.css">
-                </head>
-                <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XAU MASTER WEB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-                    <div class="container">
-                            <h1>XAU MASTER WEB</h1>
-                                    <p>AI Trading Assistant</p>
+<div class="container">
 
-                                            <div class="card">
-                                                        <h2>XAU/USD</h2>
-                                                                    <p id="xauSignal">Menunggu Analisa...</p>
-                                                                            </div>
+    <h1>XAU MASTER WEB</h1>
+    <p>AI Trading Assistant</p>
 
-                                                                                    <div class="card">
-                                                                                                <h2>BTC/USD</h2>
+    <div id="apiStatus" class="status">
+        🟡 Belum Terhubung
+    </div>
+
+    <div class="card">
+        <h2>XAU/USD</h2>
+        <p id="xauSignal">Menunggu Analisa...</p>
+    </div>
+
+    <div class="card">
+        <h2>BTC/USD</h2>
+        <p id="btcSignal">Menunggu Analisa...</p>
+    </div>
+
+    <div class="footer-info">
+        <strong>Last Update</strong>
+        <p id="lastUpdate">--:--:--</p>
+    </div>
+
+    <button onclick="analyzeMarket()">
+        ANALISA SEKARANG
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>                                                                            <h2>BTC/USD</h2>
                                                                                                             <p id="btcSignal">Menunggu Analisa...</p>
                                                                                                                     </div>
 
@@ -30,5 +54,5 @@
                                                                                                                                                         <script src="script.js"></script>
 
                                                                                                                                                         </body>
-                                                                                                                                                        </html>
+            
  
